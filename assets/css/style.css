@@ -1,24 +1,81 @@
-body {
-  font-family: Arial, sans-serif;
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-  line-height: 1.6;
+/* ---------- Global ---------- */
+* {
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: #0f172a;          /* dark slate */
+  color: #e5e7eb;               /* soft white */
+  max-width: 960px;
+  margin: auto;
+  padding: 40px 20px;
+  line-height: 1.7;
+}
+
+/* ---------- Header ---------- */
 header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+}
+
+header h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  margin-top: 25px;
 }
 
 nav a {
-  margin: 0 10px;
+  color: #38bdf8;
   text-decoration: none;
-  font-weight: bold;
+  margin: 0 14px;
+  font-weight: 600;
+  transition: color 0.2s ease;
 }
 
-.project {
-  border-left: 4px solid #444;
-  padding-left: 15px;
-  margin-bottom: 25px;
+nav a:hover {
+  color: #7dd3fc;
 }
+
+/* ---------- Sections ---------- */
+section {
+  background: #020617;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 35px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+section h2 {
+  border-left: 4px solid #38bdf8;
+  padding-left: 12px;
+  margin-bottom: 18px;
+  font-size: 1.5rem;
+}
+
+/* ---------- Lists ---------- */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* ---------- Project Cards ---------- */
+.project {
+  background: #020617;
+  border-left: 4px solid #22d3ee;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  transition: transform
